@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
-  root 'todo_lists#index'
+  get 'welcome/index'
+
+  root 'welcome#index'
   resources :todo_lists
 end
